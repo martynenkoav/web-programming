@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1{
+    padding: 20px; /* Поля вокруг текста */
+    color: #1b365c;
+}
+footer{
+   /* position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #FCE8FE; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+aside {
+    position: absolute;
+    background: #FCE8FE;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    top: 5px;
+    right: 5px;
+}
+p {color: #1b365c;}
+body {
+    color: #1b365c;
+}
+card{
+    display:flex;
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+}
+
+.slider__item {
+    flex-direction: row;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7rem;
+}
+
+.slider__item:nth-child(1) {
+    /*background-color: #f44336;*/
+}
+
+.slider__item:nth-child(2) {
+   /* background-color: #9c27b0;
+
+    */
+   }
+
+
+.slider__item:nth-child(3) {
+   /* background-color: #3f51b5;*/
+}
+
+.slider__item:nth-child(4) {
+    background-color: #03a9f4;
+}
+
+.slider__item:nth-child(5) {
+    background-color: #4caf50;
+}
