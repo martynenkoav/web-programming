@@ -29,20 +29,16 @@
 </header>
 <main id="content" class="group" role="main" onload="showSlides()">
     <p>
-        <input type="search" placeholder="Поиск по сайту" size="70">
+        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Поиск" autofocus>
+        <input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
+        <input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
     </p>
-    <nav><a href="1.html">Список концертов</a> | <a href="2.html">Купить билет</a> |
-        <a href="3.html">Вернуть билет</a> | <a href="4.html">FAQ</a></nav>
+    <nav><a href="1.html" class="a1">Список концертов</a>  <a href="2.html" class="a2">Купить билет</a>
+        <a href="3.html" class="a3">Вернуть билет</a>  <a href="4.html" class="a4">FAQ</a></nav>
     <aside>
         <p>&#128386 bilet@gmail.com <br>&#9742 +79998887766
         </p>
     </aside>
-    <ol>
-        <li>Нужно подумать о цветовых решениях</li>
-        <li>Добавить логотип</li>
-        <li>Возможно, убрать надпись в нижней части страницы</li>
-        <li>Формула моего успеха: <strong>упорство<sup>время</sup>&#215сообразительность</strong></li>
-    </ol>
     <div class="container">
 
         <div class="slider">
@@ -58,12 +54,10 @@
                         <img src="dua.jpg" alt="альтернативный текст" style="width:100%">
                     </div>
                     <div class="slider__item">
-                        <!-- Контент 4 слайда -->
-                        4
+                        <img src="maluma.jpg" alt="альтернативный текст" style="width:100%">
                     </div>
                     <div class="slider__item">
-                        <!-- Контент 5 слайда -->
-                        5
+                        <img src="billie.jpg" alt="альтернативный текст" style="width:100%">
                     </div>
                 </div>
             </div>
@@ -83,6 +77,11 @@
     <p><time datetime="2021">2021</time>
         Мартыненко Анастасия</p>
     <address>Санкт-Петербург</address>
+    <h3 style="font-style: italic; font-size: large; color: black">Page load time in JavaScript</h3>
+    <div>
+        <span id="loadtime"></span>
+
+    </div>
 </footer>
 </body>
 </html>
